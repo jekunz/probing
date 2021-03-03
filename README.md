@@ -2,9 +2,10 @@
 
 To reproduce results: 
 
-For experiments on syntactic dependency parsing: 
+## For experiments on syntactic dependency parsing: 
 
-run main.py. By default, the program expects the files 'en_ewt-ud-train.conllu' and 'en_ewt-ud-dev.conllu' in the same directory. 
+Run main.py. 
+By default, the program expects the files 'en_ewt-ud-train.conllu' and 'en_ewt-ud-dev.conllu' in the same directory. 
 
 The following parameters can be changed in config.py:
 * train_size: integer; number of lines to be used from the train file
@@ -17,4 +18,7 @@ The following parameters can be changed in config.py:
 * inflate: boolean; True if BERT/GloVE representation should be inflated to 1024 dims
 * seeds: list with random seeds (integers) for the classifier
 
-For word identity prediction task, run word_identity.ipynb. The parameters are by default also changed in config.py.
+## For word identity prediction task:
+
+Run word_identity.ipynb. 
+The parameters are by default also changed in config.py (see above; except 'tasks' that will not have any effect).
